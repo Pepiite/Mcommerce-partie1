@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "d4402bd9-29f1-4abf-8204-747441b98b35",
+		"name": "TestsPostman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{url_localhost}}/AdminProduits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_localhost}}/AdminProduits",
+					"host": [
+						"{{url_localhost}}"
+					],
+					"path": [
+						"AdminProduits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url_localhost}}/ProduitsTries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_localhost}}/ProduitsTries",
+					"host": [
+						"{{url_localhost}}"
+					],
+					"path": [
+						"ProduitsTries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url_localhost}}/Produits",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 4,\n\t\"nom\": \"Poney\",\n\t\"prix\": 0\n}"
+				},
+				"url": {
+					"raw": "{{url_localhost}}/Produits",
+					"host": [
+						"{{url_localhost}}"
+					],
+					"path": [
+						"Produits"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
